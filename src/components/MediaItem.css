@@ -112,3 +112,83 @@
 .mute-button:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
+
+/* New styles for the horizontal product carousel */
+.products-carousel {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px 0;
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  scrollbar-width: thin;
+  z-index: 5;
+}
+
+.products-carousel::-webkit-scrollbar {
+  height: 5px;
+}
+
+.products-carousel::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+.carousel-product-card {
+  min-width: 150px;
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.carousel-product-card:hover {
+  transform: translateY(-5px);
+}
+
+.carousel-product-image {
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+}
+
+.carousel-product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-product-info {
+  padding: 10px;
+}
+
+.carousel-product-info h4 {
+  margin: 0;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.carousel-product-price {
+  font-weight: bold;
+  color: #e91e63;
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
+
+.shop-link {
+  display: block;
+  background-color: #e91e63;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 0.8rem;
+  border-radius: 4px;
+}
